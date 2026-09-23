@@ -32,17 +32,23 @@ tr:nth-child(even){background:#111}
 footer{margin-top:32px;color:var(--muted);font-size:12px;border-top:1px solid var(--border);padding-top:16px}
 ul.links{list-style:none;padding:0}
 ul.links li{margin:8px 0}
-code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:var(--gold)}</style>
+code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:var(--gold)}
+.filters{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:12px 0 16px}
+.filters button,.filters select{appearance:none;background:#1a1a1a;color:var(--text);border:1px solid var(--border);border-radius:999px;padding:8px 14px;font-size:13px;cursor:pointer}
+.filters button.active,.filters button:hover{border-color:var(--gold);color:var(--gold)}
+.filters button.active{background:rgba(212,175,55,0.15)}
+.filters label{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:0.06em}
+.filters .count{color:var(--muted);font-size:13px;margin-left:auto}</style>
 </head>
 <body>
 <div class="banner">
   Static snapshot for AI/crawlers — <a href="https://lilboreal.github.io/socal-shine-crm-live/">live app</a> —
-  Generated Sep 22, 2026, 9:54:10 PM PDT (America/Los_Angeles)
+  Generated Sep 22, 2026, 10:02:43 PM PDT (America/Los_Angeles)
 </div>
 <div class="wrap">
 <header>
   <h1>SoCal Shine CRM</h1>
-  <p>Window cleaning &amp; screen repair · San Diego North County · static HTML snapshot (no JavaScript)</p>
+  <p>Window cleaning &amp; screen repair · San Diego North County · static HTML snapshot (filter UI uses light inline JS; full table remains in source)</p>
 </header>
 <nav>
 <a href="dashboard.html">Dashboard</a>
@@ -55,6 +61,18 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 
 <section>
   <h2 style="color:var(--gold)">All jobs (79)</h2>
+  <p style="color:var(--muted);margin:0 0 8px">Full table stays in the HTML for crawlers. Filters below are for humans only. Screen jobs in this snapshot: <strong style="color:var(--red)">13</strong>.</p>
+  <div class="filters" role="group" aria-label="Job filters">
+    <button type="button" id="filter-all" class="active">Show all</button>
+    <button type="button" id="filter-screens">Screen jobs only</button>
+    <label for="jobs-sort">Sort</label>
+    <select id="jobs-sort">
+      <option value="default">Sheet order</option>
+      <option value="screens">Screens $ desc</option>
+      <option value="date">Date desc</option>
+    </select>
+    <span class="count" id="jobs-visible-count"></span>
+  </div>
   <div style="overflow-x:auto">
   <table>
     <thead>
@@ -63,7 +81,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
         <th>Service</th><th>Tech</th><th>Price</th><th>Tip</th><th>Cost</th><th>Profit</th><th>Screens</th><th>Notes</th>
       </tr>
     </thead>
-    <tbody><tr>
+    <tbody id="jobs-tbody"><tr data-screens="0" data-screens-amt="0" data-date="2026-09-20">
 <td>78</td>
 <td>Sep 20, 2026</td>
 <td>Brian</td>
@@ -79,7 +97,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-09-20">
 <td>79</td>
 <td>Sep 20, 2026</td>
 <td>Tim Masson</td>
@@ -95,7 +113,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-09-19">
 <td>75</td>
 <td>Sep 19, 2026</td>
 <td>Buket</td>
@@ -111,7 +129,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>huge screen job need to be added</td>
 </tr>
-<tr>
+<tr data-screens="1" data-screens-amt="480" data-date="2026-09-19">
 <td>77</td>
 <td>Sep 19, 2026</td>
 <td>Scott</td>
@@ -127,8 +145,8 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money">$480.00</td>
 <td>480 extra from on site mesh repair</td>
 </tr>
-<tr>
-<td>74</td>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-09-18">
+<td>80</td>
 <td>Sep 18, 2026</td>
 <td>Warren</td>
 <td>858-213-3124</td>
@@ -143,7 +161,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>lowered price by 100 bc no inside</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-09-17">
 <td>73</td>
 <td>Sep 17, 2026</td>
 <td>Diana</td>
@@ -159,7 +177,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="1" data-screens-amt="100" data-date="2026-09-17">
 <td>74</td>
 <td>Sep 17, 2026</td>
 <td>Jackie Vaiasuso</td>
@@ -175,7 +193,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money">$100.00</td>
 <td>add on 2 extra screens</td>
 </tr>
-<tr>
+<tr data-screens="1" data-screens-amt="160" data-date="2026-09-16">
 <td>71</td>
 <td>Sep 16, 2026</td>
 <td>Teryn</td>
@@ -191,7 +209,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money">$160.00</td>
 <td>160 extar for screens</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-09-16">
 <td>72</td>
 <td>Sep 16, 2026</td>
 <td>Jessica</td>
@@ -207,7 +225,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="1" data-screens-amt="50" data-date="2026-09-15">
 <td>70</td>
 <td>Sep 15, 2026</td>
 <td>Shariff</td>
@@ -223,7 +241,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money">$50.00</td>
 <td>50 extra one screen</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-09-14">
 <td>68</td>
 <td>Sep 14, 2026</td>
 <td>Cathleen</td>
@@ -239,7 +257,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-09-14">
 <td>69</td>
 <td>Sep 14, 2026</td>
 <td>Kim Lee</td>
@@ -255,7 +273,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-09-13">
 <td>67</td>
 <td>Sep 13, 2026</td>
 <td>Zack Steffish</td>
@@ -271,7 +289,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-09-12">
 <td>66</td>
 <td>Sep 12, 2026</td>
 <td>Kim Lawrence</td>
@@ -287,7 +305,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>wants me and carter back in 6m</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-09-11">
 <td>65</td>
 <td>Sep 11, 2026</td>
 <td>Abdul</td>
@@ -303,7 +321,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>add on 10 screens</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-09-10">
 <td>63</td>
 <td>Sep 10, 2026</td>
 <td>Lindsay</td>
@@ -319,7 +337,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>golf shot</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-09-10">
 <td>64</td>
 <td>Sep 10, 2026</td>
 <td>Christine</td>
@@ -335,7 +353,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="1" data-screens-amt="150" data-date="2026-09-05">
 <td>62</td>
 <td>Sep 5, 2026</td>
 <td>Andrea</td>
@@ -351,13 +369,13 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money">$150.00</td>
 <td>2 screen</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-09-03">
 <td>60</td>
 <td>Sep 3, 2026</td>
 <td>Maddy</td>
 <td>760-855-5885</td>
 <td>7958 Los Pinos Cir</td>
-<td>lavante</td>
+<td>Lavante</td>
 <td>Window Cleaning</td>
 <td>santi</td>
 <td class="money">$180.00</td>
@@ -367,13 +385,13 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="1" data-screens-amt="350" data-date="2026-09-03">
 <td>61</td>
 <td>Sep 3, 2026</td>
 <td>John</td>
 <td>858-405-5748</td>
 <td>7950 Los Pinos Cir</td>
-<td>lavante</td>
+<td>Lavante</td>
 <td>Window Cleaning</td>
 <td>santi</td>
 <td class="money">$225.00</td>
@@ -383,13 +401,13 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money">$350.00</td>
 <td>450 from screens (wants 6m callback)</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-09-02">
 <td>58</td>
 <td>Sep 2, 2026</td>
 <td>Paul</td>
 <td>760-402-3636</td>
 <td>7915 las nueces pl</td>
-<td>lavante</td>
+<td>Lavante</td>
 <td>Window Cleaning</td>
 <td>jordan</td>
 <td class="money">$200.00</td>
@@ -399,13 +417,13 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-09-02">
 <td>59</td>
 <td>Sep 2, 2026</td>
 <td>greg</td>
 <td>n/a</td>
 <td>7964 los pinos cir</td>
-<td>lavante</td>
+<td>Lavante</td>
 <td>Window Cleaning</td>
 <td>jordan</td>
 <td class="money">$215.00</td>
@@ -415,7 +433,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-08-30">
 <td>56</td>
 <td>Aug 30, 2026</td>
 <td>Joanne</td>
@@ -431,7 +449,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>Price adjusted (correction)</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-08-30">
 <td>57</td>
 <td>Aug 30, 2026</td>
 <td>Aruna</td>
@@ -447,7 +465,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-08-29">
 <td>54</td>
 <td>Aug 29, 2026</td>
 <td>Jennifer</td>
@@ -463,7 +481,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-08-29">
 <td>55</td>
 <td>Aug 29, 2026</td>
 <td>Cindy</td>
@@ -479,7 +497,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-08-26">
 <td>53</td>
 <td>Aug 26, 2026</td>
 <td>Phillip</td>
@@ -495,7 +513,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-08-25">
 <td>51</td>
 <td>Aug 25, 2026</td>
 <td>Nick</td>
@@ -511,7 +529,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-08-25">
 <td>52</td>
 <td>Aug 25, 2026</td>
 <td>Colleen</td>
@@ -527,7 +545,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-08-23">
 <td>49</td>
 <td>Aug 23, 2026</td>
 <td>Debbie, Scott</td>
@@ -543,7 +561,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-08-23">
 <td>50</td>
 <td>Aug 23, 2026</td>
 <td>Emily Chun</td>
@@ -559,7 +577,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="1" data-screens-amt="50" data-date="2026-08-22">
 <td>45</td>
 <td>Aug 22, 2026</td>
 <td>Dianne</td>
@@ -575,7 +593,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money">$50.00</td>
 <td>$50 extra from screen mesh</td>
 </tr>
-<tr>
+<tr data-screens="1" data-screens-amt="200" data-date="2026-08-22">
 <td>46</td>
 <td>Aug 22, 2026</td>
 <td>Frank (Amble Dr)</td>
@@ -591,7 +609,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money">$200.00</td>
 <td>$200 extra from screens</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-08-22">
 <td>47</td>
 <td>Aug 22, 2026</td>
 <td>Lu</td>
@@ -607,7 +625,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-08-22">
 <td>48</td>
 <td>Aug 22, 2026</td>
 <td>Lisa, Steve</td>
@@ -623,7 +641,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-08-15">
 <td>44</td>
 <td>Aug 15, 2026</td>
 <td>Shelly</td>
@@ -639,13 +657,13 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>Hawkins' mom's good friend</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-08-14">
 <td>43</td>
 <td>Aug 14, 2026</td>
 <td>Jim</td>
 <td>760-415-6638</td>
 <td>3108 Serrano Dr</td>
-<td>lavante</td>
+<td>Lavante</td>
 <td>Window Cleaning</td>
 <td>Shep, Hawkins</td>
 <td class="money">$225.00</td>
@@ -655,7 +673,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>Sweet older couple, maybe reoccurring</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-08-08">
 <td>42</td>
 <td>Aug 8, 2026</td>
 <td>Leonard Miller (Leo)</td>
@@ -671,7 +689,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-08-01">
 <td>41</td>
 <td>Aug 1, 2026</td>
 <td>Dave Aurther</td>
@@ -687,7 +705,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>Carter and Cade said reoccurring</td>
 </tr>
-<tr>
+<tr data-screens="1" data-screens-amt="700" data-date="2026-07-25">
 <td>39</td>
 <td>Jul 25, 2026</td>
 <td>Curtis Buck</td>
@@ -703,7 +721,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money">$700.00</td>
 <td>Wife's #: 949-606-4642</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-07-25">
 <td>40</td>
 <td>Jul 25, 2026</td>
 <td>Priye</td>
@@ -719,7 +737,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-07-24">
 <td>37</td>
 <td>Jul 24, 2026</td>
 <td>Stephanie Vincent</td>
@@ -735,7 +753,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>Deaf lady</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-07-24">
 <td>38</td>
 <td>Jul 24, 2026</td>
 <td>George</td>
@@ -751,7 +769,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-07-22">
 <td>35</td>
 <td>Jul 22, 2026</td>
 <td>Minel</td>
@@ -767,7 +785,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-07-22">
 <td>36</td>
 <td>Jul 22, 2026</td>
 <td>Wes</td>
@@ -783,7 +801,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>Couldn't get out screens</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-07-20">
 <td>32</td>
 <td>Jul 20, 2026</td>
 <td>Beth Robert</td>
@@ -799,7 +817,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-07-20">
 <td>33</td>
 <td>Jul 20, 2026</td>
 <td>Amy</td>
@@ -815,7 +833,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-07-20">
 <td>34</td>
 <td>Jul 20, 2026</td>
 <td>Parvana</td>
@@ -831,7 +849,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="1" data-screens-amt="900" data-date="2026-07-18">
 <td>22</td>
 <td>Jul 18, 2026</td>
 <td>Kelly Fris</td>
@@ -847,7 +865,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money">$900.00</td>
 <td>Total house + screen repair</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-07-15">
 <td>28</td>
 <td>Jul 15, 2026</td>
 <td>Vanessa</td>
@@ -863,7 +881,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-07-15">
 <td>29</td>
 <td>Jul 15, 2026</td>
 <td>Deepmala</td>
@@ -879,7 +897,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="1" data-screens-amt="150" data-date="2026-07-15">
 <td>30</td>
 <td>Jul 15, 2026</td>
 <td>Santosh</td>
@@ -895,7 +913,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money">$150.00</td>
 <td>2 screen repairs done</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-07-15">
 <td>31</td>
 <td>Jul 15, 2026</td>
 <td>Zang Wendy</td>
@@ -911,7 +929,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-07-14">
 <td>25</td>
 <td>Jul 14, 2026</td>
 <td>Niel</td>
@@ -927,7 +945,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-07-14">
 <td>26</td>
 <td>Jul 14, 2026</td>
 <td>Annett</td>
@@ -943,7 +961,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-07-14">
 <td>27</td>
 <td>Jul 14, 2026</td>
 <td>Mitch</td>
@@ -959,7 +977,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-07-10">
 <td>24</td>
 <td>Jul 10, 2026</td>
 <td>Matt</td>
@@ -975,7 +993,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="1" data-screens-amt="75" data-date="2026-07-08">
 <td>23</td>
 <td>Jul 8, 2026</td>
 <td>Keith</td>
@@ -991,7 +1009,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money">$75.00</td>
 <td>Med hero owner</td>
 </tr>
-<tr>
+<tr data-screens="1" data-screens-amt="130" data-date="2026-06-14">
 <td>21</td>
 <td>Jun 14, 2026</td>
 <td>Dennis</td>
@@ -1007,7 +1025,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money">$130.00</td>
 <td>2 screens took 3m, gave to Noah</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-06-11">
 <td>18</td>
 <td>Jun 11, 2026</td>
 <td>Jim Hackett</td>
@@ -1023,7 +1041,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>95 yrs old, sweet</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-06-11">
 <td>19</td>
 <td>Jun 11, 2026</td>
 <td>Elizabeth</td>
@@ -1039,7 +1057,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>Neighbor knocked during job</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-06-11">
 <td>20</td>
 <td>Jun 11, 2026</td>
 <td>Frank (Neptune Dr)</td>
@@ -1055,7 +1073,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>Neighbor cutting tree</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-06-08">
 <td>14</td>
 <td>Jun 8, 2026</td>
 <td>Phill</td>
@@ -1071,7 +1089,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>Huge house, no screens</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-06-08">
 <td>15</td>
 <td>Jun 8, 2026</td>
 <td>Allen</td>
@@ -1087,7 +1105,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>Stonestep neighborhood</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-06-08">
 <td>16</td>
 <td>Jun 8, 2026</td>
 <td>Tom</td>
@@ -1103,7 +1121,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>Cbad beach, which house</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-06-08">
 <td>17</td>
 <td>Jun 8, 2026</td>
 <td>Patti</td>
@@ -1119,7 +1137,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>View of I-5, house</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-05-30">
 <td>13</td>
 <td>May 30, 2026</td>
 <td>Bill</td>
@@ -1135,7 +1153,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>Felt sick so didn't finish</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-05-13">
 <td>11</td>
 <td>May 13, 2026</td>
 <td>Matt (Asian)</td>
@@ -1151,7 +1169,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>Was grumpy</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-05-09">
 <td>12</td>
 <td>May 9, 2026</td>
 <td>Mike</td>
@@ -1167,7 +1185,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>Happy, didn't get roof</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-04-19">
 <td>10</td>
 <td>Apr 19, 2026</td>
 <td>Stacy</td>
@@ -1183,7 +1201,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-04-19">
 <td>8</td>
 <td>Apr 19, 2026</td>
 <td>Chirs Montgumey</td>
@@ -1199,7 +1217,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>Illijia broke pipe</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-04-19">
 <td>9</td>
 <td>Apr 19, 2026</td>
 <td>Roger Matkin</td>
@@ -1215,7 +1233,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>Went well</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-04-04">
 <td>6</td>
 <td>Apr 4, 2026</td>
 <td>Matt Glazner</td>
@@ -1231,7 +1249,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>Went well</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-04-04">
 <td>7</td>
 <td>Apr 4, 2026</td>
 <td>Francesco</td>
@@ -1247,7 +1265,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td></td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-04-03">
 <td>4</td>
 <td>Apr 3, 2026</td>
 <td>Sean</td>
@@ -1263,7 +1281,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>Outside</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-04-03">
 <td>5</td>
 <td>Apr 3, 2026</td>
 <td>Krissy (Chelsea Ngbr)</td>
@@ -1279,7 +1297,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>Outside bottom story only</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-04-02">
 <td>3</td>
 <td>Apr 2, 2026</td>
 <td>Wendy Basset</td>
@@ -1295,7 +1313,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>Inside/outside</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-03-21">
 <td>1</td>
 <td>Mar 21, 2026</td>
 <td>Chelsea Koehen</td>
@@ -1311,7 +1329,7 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
 <td class="money"></td>
 <td>Inside/outside</td>
 </tr>
-<tr>
+<tr data-screens="0" data-screens-amt="0" data-date="2026-03-21">
 <td>2</td>
 <td>Mar 21, 2026</td>
 <td>Kritein Seifert</td>
@@ -1330,6 +1348,48 @@ code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:v
   </table>
   </div>
 </section>
+
+<script>
+(function () {
+  var tbody = document.getElementById('jobs-tbody');
+  if (!tbody) return;
+  var rows = Array.prototype.slice.call(tbody.querySelectorAll('tr'));
+  var mode = 'all';
+  var sort = 'default';
+  var countEl = document.getElementById('jobs-visible-count');
+  var btnAll = document.getElementById('filter-all');
+  var btnScreens = document.getElementById('filter-screens');
+  var sortSel = document.getElementById('jobs-sort');
+
+  function apply() {
+    var list = rows.slice();
+    if (sort === 'screens') {
+      list.sort(function (a, b) {
+        return (Number(b.getAttribute('data-screens-amt')) || 0) - (Number(a.getAttribute('data-screens-amt')) || 0);
+      });
+    } else if (sort === 'date') {
+      list.sort(function (a, b) {
+        return String(b.getAttribute('data-date') || '').localeCompare(String(a.getAttribute('data-date') || ''));
+      });
+    }
+    var visible = 0;
+    list.forEach(function (tr) {
+      tbody.appendChild(tr);
+      var show = mode === 'all' || tr.getAttribute('data-screens') === '1';
+      tr.style.display = show ? '' : 'none';
+      if (show) visible += 1;
+    });
+    if (countEl) countEl.textContent = 'Showing ' + visible + ' of ' + rows.length;
+    if (btnAll) btnAll.classList.toggle('active', mode === 'all');
+    if (btnScreens) btnScreens.classList.toggle('active', mode === 'screens');
+  }
+
+  if (btnAll) btnAll.addEventListener('click', function () { mode = 'all'; apply(); });
+  if (btnScreens) btnScreens.addEventListener('click', function () { mode = 'screens'; apply(); });
+  if (sortSel) sortSel.addEventListener('change', function () { sort = sortSel.value; apply(); });
+  apply();
+})();
+</script>
 <footer>
   SoCal Shine By Shepard Reichlyn · Static build for crawlers &amp; Claude ·
   Live SPA: <a href="https://lilboreal.github.io/socal-shine-crm-live/">https://lilboreal.github.io/socal-shine-crm-live/</a>

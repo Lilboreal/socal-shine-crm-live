@@ -1,84 +1,88 @@
-"SoCal Shine Window Cleaning Jobs Log  ·  one row per completed job Job #","Date","Customer Name","Phone","Address","City","Service Type","Technician","Referral Source","Price","Tip","Job Cost","Profit","Notes"
-"1","Mar 21, 2026","Chelsea Koehen","619-818-6030","Chelseas House","Carlsbad","Window Cleaning","Shep, Chase","Amanda Rei","$370","$0","$60","$310","Inside/outside"
-"2","Mar 21, 2026","Kritein Seifert","858-768-1783","Kristin House","Carlsbad","Window Cleaning","Shep, Chase","Amanda Rei","$400","$0","$15","$385","Inside/outside"
-"3","Apr 2, 2026","Wendy Basset","760-672-0134","3072 Rancho La Presa","Carlsbad","Window Cleaning","Shep","Shep D2D","$280","$0","$0","$280","Inside/outside"
-"4","Apr 3, 2026","Sean","619-889-5919","248 Violet Ave","San Marcos","Window Cleaning","Stone, Illijia","Shep D2D","$300","$0","$150","$150","Outside"
-"5","Apr 3, 2026","Krissy (Chelsea Ngbr)","31-398-4986","Next to Chelsea","Carlsbad","Window Cleaning","Shep","Amanda Rei","$200","$0","$0","$200","Outside bottom story only"
-"6","Apr 4, 2026","Matt Glazner","760-846-3796","16495 Nicole Ridge","4S Ranch","Window Cleaning","Shep, Illijia","Shep D2D","$325","$0","$55","$270","Went well"
-"7","Apr 4, 2026","Francesco","619-204-6306","15872 Wakefeild Lane","4S Ranch","Window Cleaning","Shep, Illijia","Ryan R","$325","$0","$70","$255",""
-"8","Apr 19, 2026","Chirs Montgumey","858-361-3695","551 Nobel Ct","Encinitas","Window Cleaning","Illijia, Shep","Shep D2D","$325","$0","$55","$270","Illijia broke pipe"
-"9","Apr 19, 2026","Roger Matkin","559-967-3960","574 Nobel Ct.","Encinitas","Window Cleaning","Illijia, Shep","Shep D2D","$445","$0","$55","$390","Went well"
-"10","Apr 19, 2026","Stacy","619-549-7143","3068 Rancho La Presa","Encinitas","Window Cleaning","Finn, Shep","Shep D2D","$300","$0","$60","$240",""
-"11","May 13, 2026","Matt (Asian)","760-882-2828","1582 Wakefeild Lane","4S Ranch","Window Cleaning","Holden, Shep","Shep D2D","$325","$0","$60","$265","Was grumpy"
-"12","May 9, 2026","Mike","917-226-7730","1886 Angeline Pl","4S Ranch","Window Cleaning","Holden, Shep","Shep D2D","$400","$0","$60","$340","Happy, didn't get roof"
-"13","May 30, 2026","Bill","954-658-4840","208 Pacific View","Encinitas","Window Cleaning","Teddy, Carter","Shep D2D","$300","$0","$100","$200","Felt sick so didn't finish"
-"14","Jun 8, 2026","Phill","858-945-4000","1337 Skyros Way","Encinitas","Window Cleaning","Carter, Shep","Shep D2D","$600","$0","$85","$515","Huge house, no screens"
-"15","Jun 8, 2026","Allen","775-301-7530","205 Coral Cove","Old Hood","Window Cleaning","Shep, Carter","Shep D2D","$300","$0","$55","$245","Stonestep neighborhood"
-"16","Jun 8, 2026","Tom","702-271-5868","7579 Navigator Circle","Carlsbad","Window Cleaning","Shep, Carter","Shep D2D","$225","$0","$60","$165","Cbad beach, which house"
-"17","Jun 8, 2026","Patti","619-847-5494","7536 Navigator Circle","Carlsbad","Window Cleaning","Shep, Carter","Shep D2D","$249","$0","$50","$199","View of I-5, house"
-"18","Jun 11, 2026","Jim Hackett","760-476-9751","7473 Neptune Dr","Carlsbad","Window Cleaning","Shep, Carter","Shep D2D","$200","$0","$45","$155","95 yrs old, sweet"
-"19","Jun 11, 2026","Elizabeth","510-364-3224","7475 Neptune","Carlsbad","Window Cleaning","Shep, Carter","Shep D2D","$200","$0","$45","$155","Neighbor knocked during job"
-"20","Jun 11, 2026","Frank (Neptune Dr)","661-312-2015","7523 Neptune","Carlsbad","Window Cleaning","Shep, Carter","Shep D2D","$300","$0","$70","$230","Neighbor cutting tree"
-"21","Jun 14, 2026","Dennis","650-400-3340","7461 Neptune","Carlsbad","Window Cleaning","Illijia, Shep","Illijia D2D","$350","$0","$140","$210","2 screens took 3m, gave to Noah"
-"22","Jul 18, 2026","Kelly Fris","760-710-7881","7623 Circulo Sequoia","Carlsbad","Window Cleaning","Shep, Sawyer","MOM","$1,500","$0","$490","$1,010","Total house + screen repair"
-"23","Jul 8, 2026","Keith","760-274-3618","165 Raintree","Encinitas","Window Cleaning","Chase, Carter","Shep D2D","$300","$0","$110","$190","Med hero owner"
-"24","Jul 14, 2026","Niel","302-388-9819","15132 Palomino Valley Pl","Rancho Bernardo","Window Cleaning","Shep","Evan K","$200","$0","$125","$75",""
-"25","Jul 14, 2026","Annett","858-842-7795","16208 Palomino Mesa Ct","Rancho Bernardo","Window Cleaning","Shep","Evan K","$75","$0","$5","$70",""
-"26","Jul 14, 2026","Mitch","858-805-5641","11012 Avenida De Los Lobos","Rancho Bernardo","Window Cleaning","Shep","Ryan E","$175","$0","$100","$75",""
-"27","Jul 15, 2026","Vanessa","858-336-5592","15131 Dove Creek Rd","Rancho Bernardo","Window Cleaning","Shep, Sawyer","Evan K","$200","$0","$138","$63",""
-"28","Jul 15, 2026","Deepmala","619-746-2121","16232 Palomino Mesa Ct","Rancho Bernardo","Window Cleaning","Shep, Sawyer","Shep, Santos","$200","$0","$43","$158",""
-"29","Jul 15, 2026","Santosh","503-880-8382","16027 Palomino Mesa Ct","Rancho Bernardo","Window Cleaning","Shep, Cade","Evan K","$330","$0","$105","$225","2 screen repairs done"
-"30","Jul 15, 2026","Zang Wendy","858-740-0554","15154 Dove Creek Road","Rancho Bernardo","Window Cleaning","Shep, Sawyer","Evan K","$250","$0","$158","$93",""
-"31","Jul 20, 2026","Beth Robert","310-714-0543","15732 Camino Codorniz","Rancho Bernardo","Window Cleaning","Shep, Cade","Ryan E","$120","$0","$82","$38",""
-"32","Jul 20, 2026","Amy","858-829-1662","10875 Avenida De Los Lobos","Rancho Bernardo","Window Cleaning","Shep, Cade","Shep","$200","$0","$46","$154",""
-"33","Jul 20, 2026","Parvana","858-252-9264","15841 Corte Legarto","Rancho Bernardo","Window Cleaning","Shep, Cade","Ryan E","$225","$0","$98","$127",""
-"34","Jul 22, 2026","Minel","858-610-2027","15890 Anjou Lane","Rancho Bernardo","Window Cleaning","Shep, Ryan","Ryan E","$200","$0","$92","$108",""
-"35","Jul 22, 2026","Wes","858-775-8891","15266 Winesprings Ct","Rancho Bernardo","Window Cleaning","Shep, Ryan","Ryan E","$60","$0","$45","$15","Couldn't get out screens"
-"36","Jul 24, 2026","Stephanie Vincent","760-613-7399","750 Glen Arbor Drive","Encinitas","Window Cleaning","Illijia, Evan","Ryan E","$155","$0","$112","$43","Deck lady"
-"37","Jul 24, 2026","George","858-344-9252","11065 Camino Abrojo","Rancho Bernardo","Window Cleaning","Illijia, Evan","Ryan E","$80","$0","$60","$20",""
-"38","Jul 25, 2026","Curtis Buck","760-814-5359","6486 Willow Pl","Carlsbad","Window Cleaning","Shep, Ryan","Ryan","$1,250","$0","$160","$1,090","275 for house, 950 for screen. Wife's #: 949-606-4642"
-"39","Jul 25, 2026","Priye","dont have","2314 Via Villegas","Carlsbad","Window Cleaning","Shep, Ryan","Ryan","$195","$0","$65","$130",""
-"40","Aug 1, 2026","Dave Aurther","909-996-9838","6462 Willow Place","Carlsbad","Window Cleaning","Shep","Ryan E","$350","$0","$300","$50","Carter and Cade said reoccurring"
-"41","Aug 8, 2026","Leonard Miller (Leo)","760-518-1751","6820 Via Verano","Carlsbad","Window Cleaning","Shep, Hawkins","Malakai","$200","$0","$100","$100",""
-"42","Aug 14, 2026","Jim","760-415-6638","3108 Serrano Dr","lavante","Window Cleaning","Shep, Hawkins","Malakai","$225","$0","$120","$105","Sweet older couple, maybe reoccurring"
-"43","Aug 15, 2026","Shelly","321-732-1758","1506 Summit Ave","Cardiff","Window Cleaning","Shep, Hawkins","Shelly","$650","$0","$70","$580","Hawkins' mom's good friend"
-"44","Aug 22, 2026","Dianne","760-207-8539","6625 Remson Ct","Carlsbad","Window Cleaning","Shep, Holden","Malakai","$350","$0","$177","$173","$50 extra from screen mesh"
-"45","Aug 22, 2026","Frank (Amble Dr)","858-472-9739","21741 Amble Drive","Harmony Grove","Window Cleaning","Shep, Carter","Shep","$600","$0","$54","$546","$200 extra from screens"
-"46","Aug 22, 2026","Lu","619-402-3252","21711 Deer Grass Dr","Harmony Grove","Window Cleaning","Shep, Carter","Chase C","$280","$40","$187","$133",""
-"47","Aug 22, 2026","Lisa, Steve","949-363-3838","21735 Amble Dr","Harmony Grove","Window Cleaning","Shep, Carter","Shep","$200","$0","$54","$146",""
-"48","Aug 23, 2026","Debbie, Scott","760-840-6380","6613 Remsen Ct","Carlsbad","Window Cleaning","Shep, Holden","Ryan E","$200","$50","$115","$135",""
-"49","Aug 23, 2026","Emily Chun","952-452-2890","7325 Gabbiano Lane","Carlsbad","Window Cleaning","Shep, Holden","Ryan","$400","$0","$202","$198",""
-"50","Aug 25, 2026","Nick","760-877-1047","2705 Overlook Point Dr","Harmony Grove","Window Cleaning","Shep, Kyson","Malakai","$340","$0","$139","$201",""
-"51","Aug 25, 2026","Colleen","760-522-3366","2227 Shadyridge","Harmony Grove","Window Cleaning","Shep, Kyson","Malakai","$175","$0","$108","$67",""
-"52","Aug 26, 2026","Phillip","760-644-0043","22065 Gallop","Harmony Grove","Window Cleaning","Shep, Santi","Shep","$400","$0","$80","$320",""
-"53","Aug 29, 2026","Jennifer","850-218-7162","2859 Demler Dr","Harmony Grove","Window Cleaning","Shep, Carter","Malakai","$300","$0","$181","$119",""
-"54","Aug 29, 2026","Cindy","858-663-6601","2130 Singingwood Pl","Harmony Grove","Window Cleaning","Shep, Carter","Caden C","$200","$0","$96","$104",""
-"55","Aug 30, 2026","Joanne","760-497-2564","6447 Ruby Way","Carlsbad","Window Cleaning","Shep","Ryan E","$290","$60","$100","$250","Price adjusted (correction)"
-"56","Aug 30, 2026","Aruna","760-603-9288","1561 Turquoise Dr","Carlsbad","Window Cleaning","Shep","Malakai","$200","$0","$91","$109",""
-"57","Sep 2, 2026","Paul","760-402-3636","7915 las nueces pl","lavante","Window Cleaning","jordan","caden c","$200","$0","$89","$111",""
-"58","Sep 2, 2026","greg","n/a","7964 los pinos cir","lavante","Window Cleaning","jordan","Malakai","$215","$0","$104","$111",""
-"59","Sep 3, 2026","Maddy","760-855-5885","7958 Los Pinos Cir","lavante","Window Cleaning","santi","caden c","$180","$40","$190","$30",""
-"60","Sep 3, 2026","John","858-405-5748","7950 Los Pinos Cir","lavante","Window Cleaning","santi","malaki","$675","$20","$254","$441","450 from screens (wants 6m callback)"
-"61","Sep 5, 2026","Andrea","760-450-3199","1543 Copper Ct","San Elijo","Window Cleaning","Jordan","Malaki","$450","$0","$263","$187","add on one screen"
-"62","Sep 10, 2026","Lindsay","801-643-2479","4764 Sunburst Road","Carlsbad","Window Cleaning","Kyson","Shep","$105","$0","$40","$65","golf shot "
-"63","Sep 10, 2026","Christine","949-701-3488","1857 High Ridge Ave","Carlsbad","Window Cleaning","Kyson","Malakai","$225","$20","$158","$87","add on screen work"
-"64","Sep 11, 2026","Abdul","858-245-0707","986 Merganser Ln","Carlsbad","Window Cleaning","Shep, Kyson","Malaki","$450","$0","$170","$280","add on 10 screens"
-"65","Sep 12, 2026","Kim Lawrence","760-420-2897","1341 Cassins St","Carlsbad","Window Cleaning","Shep, Carter","caden c","$450","$40","$305","$185","wants me and carter back in 6m"
-"66","Sep 13, 2026","Zack Steffish","720-334-2902","6690 Agave Cir","Carlsbad","Window Cleaning","Shep, Jordan","Caden c","$200","$0","$80","$120",""
-"67","Sep 14, 2026","Cathleen","949-525-1902","7936 Los Pinos Cir","Lavante","Window Cleaning","Jacob","Malakai","$200","$0","$133","$67",""
-"68","Sep 14, 2026","Kim Lee","760-518-7662","7989 La Brusca Way","Lavante","Window Cleaning","Jacob","caden c","$250","$20","$199","$71",""
-"69","Sep 15, 2026","Shariff","831-261-1660","1332 Cassins St","Carlsbad","Window Cleaning","Shep","Malaki","$350","$50","$75","$325","50 extra one screen"
-"70","Sep 16, 2026","Teryn","858-735-9709","2410 La Macarena Ave","Lavante","Window Cleaning","Shep","Caden c","$460","$50","$114","$396","160 extar for screens"
-"71","Sep 16, 2026","Jessica","760-473-3622","7993 La Brusca Way ","Lavante","Window Cleaning","Shep","Caden c","$125","$0","$53","$72",""
-"72","Sep 17, 2026","Diana","650-380-0113","2404 La Macarena Ave","Lavante","Window Cleaning","Shep","Caden c","$225","$25","$95","$155",""
-"73","Sep 17, 2026","Jackie Vaiasuso","619-823-1522","2409 Jacaranda Ave","Lavante","Window Cleaning","Shep","Caden c","$350","$0","$150","$200","add on 2 extra screens"
-"74","Sep 18, 2026","Warren","858-213-3124","7728 Sitio Arago","San Elijo","Window Cleaning","Shep","Malakai","$200","$50","$40","$210","lowered price by 100 bc no inside"
-"75","Sep 19, 2026","Buket","760-500-5704","1370 Cassins St","Carlsbad","Window Cleaning","Shep, Lee","Malakai","$400","$40","$182","$258","huge screen job need to be added"
-"76","Sep 19, 2026","Scott","801-376-4468","7492 Paseo Cristal","Carlsbad","Window Cleaning","Shep, Lee","Malakai","$805","$0","$275","$530","480 extra from on site mesh repair"
-"","","","","","","Window Cleaning","","","","","","",""
-"","","","","","","Window Cleaning","","","","","","",""
-"","","","","","","Window Cleaning","","","","","","",""
-"","","","","","","Window Cleaning","","","","","","",""
-"","","","","","","Window Cleaning","","","","","","",""
-"","","","","","","Window Cleaning","","","","","","",""
-"","","","","","","Window Cleaning","","","","","","",""
+SoCal Shine Window Cleaning,,,,,,,,,,,,,,
+Jobs Log  ·  one row per completed job,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,
+Job #,Date,Customer Name,Phone,Address,City,Service Type,Technician,Referral Source,Price,Tip,Job Cost,Profit,Notes,Screens
+1,"Mar 21, 2026",Chelsea Koehen,619-818-6030,Chelseas House,Carlsbad,Window Cleaning,"Shep, Chase",Amanda Rei,$370,$0,$60,$310,Inside/outside,
+2,"Mar 21, 2026",Kritein Seifert,858-768-1783,Kristin House,Carlsbad,Window Cleaning,"Shep, Chase",Amanda Rei,$400,$0,$15,$385,Inside/outside,
+3,"Apr 2, 2026",Wendy Basset,760-672-0134,3072 Rancho La Presa,Carlsbad,Window Cleaning,Shep,Shep D2D,$280,$0,$0,$280,Inside/outside,
+4,"Apr 3, 2026",Sean,619-889-5919,248 Violet Ave,San Marcos,Window Cleaning,"Stone, Illijia",Shep D2D,$300,$0,$150,$150,Outside,
+5,"Apr 3, 2026",Krissy (Chelsea Ngbr),31-398-4986,Next to Chelsea,Carlsbad,Window Cleaning,Shep,Amanda Rei,$200,$0,$0,$200,Outside bottom story only,
+6,"Apr 4, 2026",Matt Glazner,760-846-3796,16495 Nicole Ridge,4S Ranch,Window Cleaning,"Shep, Illijia",Shep D2D,$325,$0,$55,$270,Went well,
+7,"Apr 4, 2026",Francesco,619-204-6306,15872 Wakefeild Lane,4S Ranch,Window Cleaning,"Shep, Illijia",Ryan R,$325,$0,$70,$255,,
+8,"Apr 19, 2026",Chirs Montgumey,858-361-3695,551 Nobel Ct,Encinitas,Window Cleaning,"Illijia, Shep",Shep D2D,$325,$0,$55,$270,Illijia broke pipe,
+9,"Apr 19, 2026",Roger Matkin,559-967-3960,574 Nobel Ct.,Encinitas,Window Cleaning,"Illijia, Shep",Shep D2D,$445,$0,$55,$390,Went well,
+10,"Apr 19, 2026",Stacy,619-549-7143,3068 Rancho La Presa,Encinitas,Window Cleaning,"Finn, Shep",Shep D2D,$300,$0,$60,$240,,
+11,"May 13, 2026",Matt (Asian),760-882-2828,1582 Wakefeild Lane,4S Ranch,Window Cleaning,"Holden, Shep",Shep D2D,$325,$0,$60,$265,Was grumpy,
+12,"May 9, 2026",Mike,917-226-7730,1886 Angeline Pl,4S Ranch,Window Cleaning,"Holden, Shep",Shep D2D,$400,$0,$60,$340,"Happy, didn't get roof",
+13,"May 30, 2026",Bill,954-658-4840,208 Pacific View,Encinitas,Window Cleaning,"Teddy, Carter",Shep D2D,$300,$0,$100,$200,Felt sick so didn't finish,
+14,"Jun 8, 2026",Phill,858-945-4000,1337 Skyros Way,Encinitas,Window Cleaning,"Carter, Shep",Shep D2D,$600,$0,$85,$515,"Huge house, no screens",
+15,"Jun 8, 2026",Allen,775-301-7530,205 Coral Cove,Old Hood,Window Cleaning,"Shep, Carter",Shep D2D,$300,$0,$55,$245,Stonestep neighborhood,
+16,"Jun 8, 2026",Tom,702-271-5868,7579 Navigator Circle,Carlsbad,Window Cleaning,"Shep, Carter",Shep D2D,$225,$0,$60,$165,"Cbad beach, which house",
+17,"Jun 8, 2026",Patti,619-847-5494,7536 Navigator Circle,Carlsbad,Window Cleaning,"Shep, Carter",Shep D2D,$249,$0,$50,$199,"View of I-5, house",
+18,"Jun 11, 2026",Jim Hackett,760-476-9751,7473 Neptune Dr,Carlsbad,Window Cleaning,"Shep, Carter",Shep D2D,$200,$0,$45,$155,"95 yrs old, sweet",
+19,"Jun 11, 2026",Elizabeth,510-364-3224,7475 Neptune,Carlsbad,Window Cleaning,"Shep, Carter",Shep D2D,$200,$0,$45,$155,Neighbor knocked during job,
+20,"Jun 11, 2026",Frank (Neptune Dr),661-312-2015,7523 Neptune,Carlsbad,Window Cleaning,"Shep, Carter",Shep D2D,$300,$0,$70,$230,Neighbor cutting tree,
+21,"Jun 14, 2026",Dennis,650-400-3340,7461 Neptune,Carlsbad,Window Cleaning,"Illijia, Shep",Illijia D2D,$200,$0,$140,$60,"2 screens took 3m, gave to Noah",$130.00
+22,"Jul 18, 2026",Kelly Fris,760-710-7881,7623 Circulo Sequoia,Carlsbad,Window Cleaning,"Shep, Sawyer",MOM,$300,$0,$90,$210,Total house + screen repair,$900.00
+23,"Jul 8, 2026",Keith,760-274-3618,165 Raintree,Encinitas,Window Cleaning,"Chase, Carter",Shep D2D,$300,$0,$110,$190,Med hero owner,$75.00
+24,"Jul 10, 2026",Matt,858-335-5509,186 Raintree,Encinitas,window Cleaning,Shep,Shep D2D,$350,$25,$0,$375,,
+25,"Jul 14, 2026",Niel,302-388-9819,15132 Palomino Valley Pl,Rancho Bernardo,Window Cleaning,Shep,Evan K,$200,$0,$125,$75,,
+26,"Jul 14, 2026",Annett,858-842-7795,16208 Palomino Mesa Ct,Rancho Bernardo,Window Cleaning,Shep,Evan K,$75,$0,$5,$70,,
+27,"Jul 14, 2026",Mitch,858-805-5641,11012 Avenida De Los Lobos,Rancho Bernardo,Window Cleaning,Shep,Ryan E,$175,$0,$100,$75,,
+28,"Jul 15, 2026",Vanessa,858-336-5592,15131 Dove Creek Rd,Rancho Bernardo,Window Cleaning,"Shep, Sawyer",Evan K,$200,$0,$138,$63,,
+29,"Jul 15, 2026",Deepmala,619-746-2121,16232 Palomino Mesa Ct,Rancho Bernardo,Window Cleaning,"Shep, Sawyer","Shep, Santos",$200,$0,$43,$158,,
+30,"Jul 15, 2026",Santosh,503-880-8382,16027 Palomino Mesa Ct,Rancho Bernardo,Window Cleaning,"Shep, Cade",Evan K,$280,$0,$105,$175,2 screen repairs done,$150.00
+31,"Jul 15, 2026",Zang Wendy,858-740-0554,15154 Dove Creek Road,Rancho Bernardo,Window Cleaning,"Shep, Sawyer",Evan K,$250,$0,$158,$93,,
+32,"Jul 20, 2026",Beth Robert,310-714-0543,15732 Camino Codorniz,Rancho Bernardo,Window Cleaning,"Shep, Cade",Ryan E,$120,$0,$82,$38,,
+33,"Jul 20, 2026",Amy,858-829-1662,10875 Avenida De Los Lobos,Rancho Bernardo,Window Cleaning,"Shep, Cade",Shep,$200,$0,$46,$154,,
+34,"Jul 20, 2026",Parvana,858-252-9264,15841 Corte Legarto,Rancho Bernardo,Window Cleaning,"Shep, Cade",Ryan E,$225,$0,$98,$127,,
+35,"Jul 22, 2026",Minel,858-610-2027,15890 Anjou Lane,Rancho Bernardo,Window Cleaning,"Shep, Ryan",Ryan E,$200,$0,$92,$108,,
+36,"Jul 22, 2026",Wes,858-775-8891,15266 Winesprings Ct,Rancho Bernardo,Window Cleaning,"Shep, Ryan",Ryan E,$60,$0,$45,$15,Couldn't get out screens,
+37,"Jul 24, 2026",Stephanie Vincent,760-613-7399,750 Glen Arbor Drive,Encinitas,Window Cleaning,"Illijia, Evan",Ryan E,$155,$0,$112,$43,Deaf lady,
+38,"Jul 24, 2026",George,858-344-9252,11065 Camino Abrojo,Rancho Bernardo,Window Cleaning,"Illijia, Evan",Ryan E,$80,$0,$60,$20,,
+39,"Jul 25, 2026",Curtis Buck,760-814-5359,6486 Willow Pl,Carlsbad,Window Cleaning,"Shep, Ryan",Ryan,$250,$0,$120,$130,Wife's #: 949-606-4642,$700.00
+40,"Jul 25, 2026",Priye,dont have,2314 Via Villegas,Carlsbad,Window Cleaning,"Shep, Ryan",Ryan,$195,$0,$65,$130,,
+41,"Aug 1, 2026",Dave Aurther,909-996-9838,6462 Willow Place,Carlsbad,Window Cleaning,Shep,Ryan E,$350,$0,$300,$50,Carter and Cade said reoccurring,
+42,"Aug 8, 2026",Leonard Miller (Leo),760-518-1751,6820 Via Verano,Carlsbad,Window Cleaning,"Shep, Hawkins",Malakai,$200,$0,$100,$100,,
+43,"Aug 14, 2026",Jim,760-415-6638,3108 Serrano Dr,Lavante,Window Cleaning,"Shep, Hawkins",Malakai,$225,$0,$120,$105,"Sweet older couple, maybe reoccurring",
+44,"Aug 15, 2026",Shelly,321-732-1758,1506 Summit Ave,Cardiff,Window Cleaning,"Shep, Hawkins",Shelly,$650,$0,$70,$580,Hawkins' mom's good friend,
+45,"Aug 22, 2026",Dianne,760-207-8539,6625 Remson Ct,Carlsbad,Window Cleaning,"Shep, Holden",Malakai,$300,$0,$177,$123,$50 extra from screen mesh,$50.00
+46,"Aug 22, 2026",Frank (Amble Dr),858-472-9739,21741 Amble Drive,Harmony Grove,Window Cleaning,"Shep, Carter",Shep,$400,$0,$54,$346,$200 extra from screens,$200.00
+47,"Aug 22, 2026",Lu,619-402-3252,21711 Deer Grass Dr,Harmony Grove,Window Cleaning,"Shep, Carter",Chase C,$280,$40,$187,$133,,
+48,"Aug 22, 2026","Lisa, Steve",949-363-3838,21735 Amble Dr,Harmony Grove,Window Cleaning,"Shep, Carter",Shep,$200,$0,$54,$146,,
+49,"Aug 23, 2026","Debbie, Scott",760-840-6380,6613 Remsen Ct,Carlsbad,Window Cleaning,"Shep, Holden",Ryan E,$200,$50,$115,$135,,
+50,"Aug 23, 2026",Emily Chun,952-452-2890,7325 Gabbiano Lane,Carlsbad,Window Cleaning,"Shep, Holden",Ryan,$400,$0,$202,$198,,
+51,"Aug 25, 2026",Nick,760-877-1047,2705 Overlook Point Dr,Harmony Grove,Window Cleaning,"Shep, Kyson",Malakai,$340,$0,$139,$201,,
+52,"Aug 25, 2026",Colleen,760-522-3366,2227 Shadyridge,Harmony Grove,Window Cleaning,"Shep, Kyson",Malakai,$175,$0,$108,$67,,
+53,"Aug 26, 2026",Phillip,760-644-0043,22065 Gallop,Harmony Grove,Window Cleaning,"Shep, Santi",Shep,$400,$0,$80,$320,,
+54,"Aug 29, 2026",Jennifer,850-218-7162,2859 Demler Dr,Harmony Grove,Window Cleaning,"Shep, Carter",Malakai,$300,$0,$181,$119,,
+55,"Aug 29, 2026",Cindy,858-663-6601,2130 Singingwood Pl,Harmony Grove,Window Cleaning,"Shep, Carter",Caden C,$200,$0,$96,$104,,
+56,"Aug 30, 2026",Joanne,760-497-2564,6447 Ruby Way,Carlsbad,Window Cleaning,Shep,Ryan E,$290,$60,$100,$250,Price adjusted (correction),
+57,"Aug 30, 2026",Aruna,760-603-9288,1561 Turquoise Dr,Carlsbad,Window Cleaning,Shep,Malakai,$200,$0,$91,$109,,
+58,"Sep 2, 2026",Paul,760-402-3636,7915 las nueces pl,Lavante,Window Cleaning,jordan,caden c,$200,$0,$89,$111,,
+59,"Sep 2, 2026",greg,n/a,7964 los pinos cir,Lavante,Window Cleaning,jordan,Malakai,$215,$0,$104,$111,,
+60,"Sep 3, 2026",Maddy,760-855-5885,7958 Los Pinos Cir,Lavante,Window Cleaning,santi,caden c,$180,$40,$190,$30,,
+61,"Sep 3, 2026",John,858-405-5748,7950 Los Pinos Cir,Lavante,Window Cleaning,santi,malaki,$225,$20,$154,$91,450 from screens (wants 6m callback),$350.00
+62,"Sep 5, 2026",Andrea,760-450-3199,1543 Copper Ct,San Elijo,Window Cleaning,Jordan,Malaki,$450,$0,$263,$187,2 screen,$150.00
+63,"Sep 10, 2026",Lindsay,801-643-2479,4764 Sunburst Road,Carlsbad,Window Cleaning,Kyson,Shep,$105,$0,$40,$65,golf shot ,
+64,"Sep 10, 2026",Christine,949-701-3488,1857 High Ridge Ave,Carlsbad,Window Cleaning,Kyson,Malakai,$225,$20,$158,$87,,
+65,"Sep 11, 2026",Abdul,858-245-0707,986 Merganser Ln,Carlsbad,Window Cleaning,"Shep, Kyson",Malaki,$450,$0,$170,$280,add on 10 screens,
+66,"Sep 12, 2026",Kim Lawrence,760-420-2897,1341 Cassins St,Carlsbad,Window Cleaning,"Shep, Carter",caden c,$450,$40,$305,$185,wants me and carter back in 6m,
+67,"Sep 13, 2026",Zack Steffish,720-334-2902,6690 Agave Cir,Carlsbad,Window Cleaning,"Shep, Jordan",Caden c,$200,$0,$80,$120,,
+68,"Sep 14, 2026",Cathleen,949-525-1902,7936 Los Pinos Cir,Lavante,Window Cleaning,Jacob,Malakai,$200,$0,$133,$67,,
+69,"Sep 14, 2026",Kim Lee,760-518-7662,7989 La Brusca Way,Lavante,Window Cleaning,Jacob,caden c,$250,$20,$199,$71,,
+70,"Sep 15, 2026",Shariff,831-261-1660,1332 Cassins St,Carlsbad,Window Cleaning,Shep,Malaki,$350,$50,$75,$325,50 extra one screen,$50.00
+71,"Sep 16, 2026",Teryn,858-735-9709,2410 La Macarena Ave,Lavante,Window Cleaning,Shep,Caden c,$460,$50,$114,$396,160 extar for screens,$160.00
+72,"Sep 16, 2026",Jessica,760-473-3622,7993 La Brusca Way ,Lavante,Window Cleaning,Shep,Caden c,$125,$0,$53,$72,,
+73,"Sep 17, 2026",Diana,650-380-0113,2404 La Macarena Ave,Lavante,Window Cleaning,Shep,Caden c,$225,$25,$95,$155,,
+74,"Sep 17, 2026",Jackie Vaiasuso,619-823-1522,2409 Jacaranda Ave,Lavante,Window Cleaning,Shep,Caden c,$350,$0,$150,$200,add on 2 extra screens,$100.00
+80,"Sep 18, 2026",Warren,858-213-3124,7728 Sitio Arago,San Elijo,Window Cleaning,Shep,Malakai,$200,$50,$40,$210,lowered price by 100 bc no inside,
+75,"Sep 19, 2026",Buket,760-500-5704,1370 Cassins St,Carlsbad,Window Cleaning,"Shep, Lee",Malakai,$400,$40,$182,$258,huge screen job need to be added,
+77,"Sep 19, 2026",Scott,801-376-4468,7492 Paseo Cristal,Carlsbad,Window Cleaning,"Shep, Lee",Malakai,$805,$0,$275,$530,480 extra from on site mesh repair,$480.00
+78,"Sep 20, 2026",Brian,7347870187,1568 Clifftop Ave,Carlsbad,Window Cleaning,"Shep, Lee",Malaki,$480,$0,$230,$250,,
+79,"Sep 20, 2026",Tim Masson,805-750-2074,1611 Artemisia Court,Carlsbad,Window Cleaning,"Shep, Lee",Caden C,$275,$25,$135,$165,,
+,,,,,,Window Cleaning,,,,,,,,
+,,,,,,Window Cleaning,,,,,,,,
+,,,,,,Window Cleaning,,,,,,,,
+,,,,,,Window Cleaning,,,,,,,,
+,,,,,,Window Cleaning,,,,,,,,
