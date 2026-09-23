@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="robots" content="index,follow"/>
+<title>Dashboard · SoCal Shine CRM (static)</title>
+<style>:root{--bg:#0a0a0a;--gold:#d4af37;--red:#c41e3a;--text:#f5f5f5;--muted:#a3a3a3;--card:#141414;--border:#2a2a2a}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+a{color:var(--gold)}
+a:hover{color:#f0d87a}
+.banner{background:var(--red);color:#fff;padding:10px 16px;font-size:14px;text-align:center}
+.banner a{color:#fff;text-decoration:underline;font-weight:600}
+.wrap{max-width:1100px;margin:0 auto;padding:20px 16px 48px}
+header h1{color:var(--gold);margin:8px 0 4px;font-size:1.75rem;letter-spacing:0.02em}
+header p{color:var(--muted);margin:0 0 16px}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 24px}
+nav a{display:inline-block;padding:6px 12px;border:1px solid var(--gold);border-radius:6px;text-decoration:none;font-size:13px;color:var(--gold)}
+nav a:hover,nav a.active{background:var(--gold);color:#0a0a0a}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin:16px 0}
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
+.card .label{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:0.06em}
+.card .value{color:var(--gold);font-size:1.4rem;font-weight:700;margin-top:4px}
+.card.red .value{color:var(--red)}
+table{width:100%;border-collapse:collapse;font-size:13px;margin:12px 0}
+th,td{border:1px solid var(--border);padding:8px 10px;text-align:left}
+th{background:#1a1a1a;color:var(--gold);position:sticky;top:0}
+tr:nth-child(even){background:#111}
+.money{text-align:right;font-variant-numeric:tabular-nums}
+.note{background:var(--card);border-left:3px solid var(--gold);padding:12px 16px;margin:16px 0;color:var(--muted)}
+footer{margin-top:32px;color:var(--muted);font-size:12px;border-top:1px solid var(--border);padding-top:16px}
+ul.links{list-style:none;padding:0}
+ul.links li{margin:8px 0}
+code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:var(--gold)}</style>
+</head>
+<body>
+<div class="banner">
+  Static snapshot for AI/crawlers — <a href="https://lilboreal.github.io/socal-shine-crm-live/">live app</a> —
+  Generated Sep 22, 2026, 9:54:10 PM PDT (America/Los_Angeles)
+</div>
+<div class="wrap">
+<header>
+  <h1>SoCal Shine CRM</h1>
+  <p>Window cleaning &amp; screen repair · San Diego North County · static HTML snapshot (no JavaScript)</p>
+</header>
+<nav>
+<a href="dashboard.html" class="active">Dashboard</a>
+<a href="jobs.html">Jobs</a>
+<a href="map.html">Map</a>
+<a href="sheet.html">Sheet</a>
+<a href="pnl.html">P&L</a>
+<a href="claude.html">Claude index</a>
+</nav>
+
+<section>
+  <h2 style="color:var(--gold)">Dashboard metrics</h2>
+  <div class="cards"><div class="card"><div class="label">Jobs</div><div class="value">79</div></div>
+<div class="card"><div class="label">Revenue (price)</div><div class="value">$22,314</div></div>
+<div class="card"><div class="label">Tips</div><div class="value">$555</div></div>
+<div class="card"><div class="label">Costs</div><div class="value">$8,292</div></div>
+<div class="card"><div class="label">Window profit</div><div class="value">$14,580</div></div>
+<div class="card red"><div class="label">Screen jobs</div><div class="value">13</div></div>
+<div class="card red"><div class="label">Screens $ (YTD)</div><div class="value">$3,495</div></div>
+<div class="card"><div class="label">Combined profit</div><div class="value">$18,075</div></div></div>
+</section>
+<section>
+  <h2 style="color:var(--gold)">Screens YTD</h2>
+  <p>13 jobs with Screens &gt; 0 · total Screens revenue <strong style="color:var(--red)">$3,495.00</strong></p>
+</section>
+<section>
+  <h2 style="color:var(--gold)">Best / runner-up month</h2>
+  <div class="cards">
+<div class="card"><div class="label">Best month</div><div class="value">September 2026</div><div class="label" style="margin-top:8px">$3,966 profit · 22 jobs</div></div>
+<div class="card"><div class="label">Runner-up</div><div class="value">August 2026</div><div class="label" style="margin-top:8px">$3,086 profit · 17 jobs</div></div>
+</div>
+</section>
+<section>
+  <h2 style="color:var(--gold)">Profit by month</h2>
+  <table>
+    <thead><tr><th>Month</th><th>Jobs</th><th>Price</th><th>Tip</th><th>Cost</th><th>Profit</th><th>Screen jobs</th><th>Screens $</th></tr></thead>
+    <tbody><tr>
+<td>March 2026</td>
+<td class="money">2</td>
+<td class="money">$770</td>
+<td class="money">$0</td>
+<td class="money">$75</td>
+<td class="money">$695</td>
+<td class="money">0</td>
+<td class="money">$0</td>
+</tr>
+<tr>
+<td>April 2026</td>
+<td class="money">8</td>
+<td class="money">$2,500</td>
+<td class="money">$0</td>
+<td class="money">$445</td>
+<td class="money">$2,055</td>
+<td class="money">0</td>
+<td class="money">$0</td>
+</tr>
+<tr>
+<td>May 2026</td>
+<td class="money">3</td>
+<td class="money">$1,025</td>
+<td class="money">$0</td>
+<td class="money">$220</td>
+<td class="money">$805</td>
+<td class="money">0</td>
+<td class="money">$0</td>
+</tr>
+<tr>
+<td>June 2026</td>
+<td class="money">8</td>
+<td class="money">$2,274</td>
+<td class="money">$0</td>
+<td class="money">$550</td>
+<td class="money">$1,724</td>
+<td class="money">1</td>
+<td class="money">$130</td>
+</tr>
+<tr>
+<td>July 2026</td>
+<td class="money">19</td>
+<td class="money">$3,815</td>
+<td class="money">$25</td>
+<td class="money">$1,594</td>
+<td class="money">$2,249</td>
+<td class="money">4</td>
+<td class="money">$1,825</td>
+</tr>
+<tr>
+<td>August 2026</td>
+<td class="money">17</td>
+<td class="money">$5,110</td>
+<td class="money">$150</td>
+<td class="money">$2,174</td>
+<td class="money">$3,086</td>
+<td class="money">2</td>
+<td class="money">$250</td>
+</tr>
+<tr>
+<td>September 2026</td>
+<td class="money">22</td>
+<td class="money">$6,820</td>
+<td class="money">$380</td>
+<td class="money">$3,234</td>
+<td class="money">$3,966</td>
+<td class="money">6</td>
+<td class="money">$1,290</td>
+</tr></tbody>
+  </table>
+</section>
+<section>
+  <h2 style="color:var(--gold)">Top cities</h2>
+  <table>
+    <thead><tr><th>City</th><th>Jobs</th><th>Profit</th></tr></thead>
+    <tbody><tr><td>Carlsbad</td><td class="money">30</td><td class="money">$5,839</td></tr>
+<tr><td>Rancho Bernardo</td><td class="money">13</td><td class="money">$1,171</td></tr>
+<tr><td>Encinitas</td><td class="money">8</td><td class="money">$2,223</td></tr>
+<tr><td>Harmony Grove</td><td class="money">8</td><td class="money">$1,436</td></tr>
+<tr><td>Lavante</td><td class="money">6</td><td class="money">$961</td></tr>
+<tr><td>lavante</td><td class="money">5</td><td class="money">$448</td></tr>
+<tr><td>4S Ranch</td><td class="money">4</td><td class="money">$1,130</td></tr>
+<tr><td>San Elijo</td><td class="money">2</td><td class="money">$397</td></tr>
+<tr><td>Cardiff</td><td class="money">1</td><td class="money">$580</td></tr>
+<tr><td>Old Hood</td><td class="money">1</td><td class="money">$245</td></tr>
+<tr><td>San Marcos</td><td class="money">1</td><td class="money">$150</td></tr></tbody>
+  </table>
+</section>
+<footer>
+  SoCal Shine By Shepard Reichlyn · Static build for crawlers &amp; Claude ·
+  Live SPA: <a href="https://lilboreal.github.io/socal-shine-crm-live/">https://lilboreal.github.io/socal-shine-crm-live/</a>
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="robots" content="index,follow"/>
+<title>Map · SoCal Shine CRM (static)</title>
+<style>:root{--bg:#0a0a0a;--gold:#d4af37;--red:#c41e3a;--text:#f5f5f5;--muted:#a3a3a3;--card:#141414;--border:#2a2a2a}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+a{color:var(--gold)}
+a:hover{color:#f0d87a}
+.banner{background:var(--red);color:#fff;padding:10px 16px;font-size:14px;text-align:center}
+.banner a{color:#fff;text-decoration:underline;font-weight:600}
+.wrap{max-width:1100px;margin:0 auto;padding:20px 16px 48px}
+header h1{color:var(--gold);margin:8px 0 4px;font-size:1.75rem;letter-spacing:0.02em}
+header p{color:var(--muted);margin:0 0 16px}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 24px}
+nav a{display:inline-block;padding:6px 12px;border:1px solid var(--gold);border-radius:6px;text-decoration:none;font-size:13px;color:var(--gold)}
+nav a:hover,nav a.active{background:var(--gold);color:#0a0a0a}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;margin:16px 0}
+.card{background:var(--card);border:1px solid var(--border);border-radius:10px;padding:14px 16px}
+.card .label{color:var(--muted);font-size:12px;text-transform:uppercase;letter-spacing:0.06em}
+.card .value{color:var(--gold);font-size:1.4rem;font-weight:700;margin-top:4px}
+.card.red .value{color:var(--red)}
+table{width:100%;border-collapse:collapse;font-size:13px;margin:12px 0}
+th,td{border:1px solid var(--border);padding:8px 10px;text-align:left}
+th{background:#1a1a1a;color:var(--gold);position:sticky;top:0}
+tr:nth-child(even){background:#111}
+.money{text-align:right;font-variant-numeric:tabular-nums}
+.note{background:var(--card);border-left:3px solid var(--gold);padding:12px 16px;margin:16px 0;color:var(--muted)}
+footer{margin-top:32px;color:var(--muted);font-size:12px;border-top:1px solid var(--border);padding-top:16px}
+ul.links{list-style:none;padding:0}
+ul.links li{margin:8px 0}
+code{background:#1a1a1a;padding:2px 6px;border-radius:4px;font-size:12px;color:var(--gold)}</style>
+</head>
+<body>
+<div class="banner">
+  Static snapshot for AI/crawlers — <a href="https://lilboreal.github.io/socal-shine-crm-live/">live app</a> —
+  Generated Sep 22, 2026, 9:54:10 PM PDT (America/Los_Angeles)
+</div>
+<div class="wrap">
+<header>
+  <h1>SoCal Shine CRM</h1>
+  <p>Window cleaning &amp; screen repair · San Diego North County · static HTML snapshot (no JavaScript)</p>
+</header>
+<nav>
+<a href="dashboard.html">Dashboard</a>
+<a href="jobs.html">Jobs</a>
+<a href="map.html" class="active">Map</a>
+<a href="sheet.html">Sheet</a>
+<a href="pnl.html">P&L</a>
+<a href="claude.html">Claude index</a>
+</nav>
+
+<section>
+  <h2 style="color:var(--gold)">Map (static)</h2>
+  <div class="note">
+    The interactive MapLibre territory map requires JavaScript in the live SPA.
+    Open the <a href="https://lilboreal.github.io/socal-shine-crm-live/">live app</a> for the map. Below: city totals and job locations from the Sheet snapshot.
+  </div>
+  <h3 style="color:var(--gold)">Cities</h3>
+  <table>
+    <thead><tr><th>City</th><th>Jobs</th><th>Profit</th></tr></thead>
+    <tbody><tr><td>Carlsbad</td><td class="money">30</td><td class="money">$5,839</td></tr>
+<tr><td>Rancho Bernardo</td><td class="money">13</td><td class="money">$1,171</td></tr>
+<tr><td>Encinitas</td><td class="money">8</td><td class="money">$2,223</td></tr>
+<tr><td>Harmony Grove</td><td class="money">8</td><td class="money">$1,436</td></tr>
+<tr><td>Lavante</td><td class="money">6</td><td class="money">$961</td></tr>
+<tr><td>lavante</td><td class="money">5</td><td class="money">$448</td></tr>
+<tr><td>4S Ranch</td><td class="money">4</td><td class="money">$1,130</td></tr>
+<tr><td>San Elijo</td><td class="money">2</td><td class="money">$397</td></tr>
+<tr><td>Cardiff</td><td class="money">1</td><td class="money">$580</td></tr>
+<tr><td>Old Hood</td><td class="money">1</td><td class="money">$245</td></tr>
+<tr><td>San Marcos</td><td class="money">1</td><td class="money">$150</td></tr></tbody>
+  </table>
+  <h3 style="color:var(--gold)">Job locations</h3>
+  <div style="overflow-x:auto">
+  <table>
+    <thead><tr><th>Job #</th><th>Customer</th><th>Address</th><th>City</th><th>Profit</th><th>Screens</th></tr></thead>
+    <tbody><tr><td>78</td><td>Brian</td><td>1568 Clifftop Ave</td><td>Carlsbad</td><td class="money">$250</td><td class="money">—</td></tr>
+<tr><td>79</td><td>Tim Masson</td><td>1611 Artemisia Court</td><td>Carlsbad</td><td class="money">$165</td><td class="money">—</td></tr>
+<tr><td>75</td><td>Buket</td><td>1370 Cassins St</td><td>Carlsbad</td><td class="money">$258</td><td class="money">—</td></tr>
+<tr><td>77</td><td>Scott</td><td>7492 Paseo Cristal</td><td>Carlsbad</td><td class="money">$530</td><td class="money">$480</td></tr>
+<tr><td>74</td><td>Warren</td><td>7728 Sitio Arago</td><td>San Elijo</td><td class="money">$210</td><td class="money">—</td></tr>
+<tr><td>73</td><td>Diana</td><td>2404 La Macarena Ave</td><td>Lavante</td><td class="money">$155</td><td class="money">—</td></tr>
+<tr><td>74</td><td>Jackie Vaiasuso</td><td>2409 Jacaranda Ave</td><td>Lavante</td><td class="money">$200</td><td class="money">$100</td></tr>
+<tr><td>71</td><td>Teryn</td><td>2410 La Macarena Ave</td><td>Lavante</td><td class="money">$396</td><td class="money">$160</td></tr>
+<tr><td>72</td><td>Jessica</td><td>7993 La Brusca Way</td><td>Lavante</td><td class="money">$72</td><td class="money">—</td></tr>
+<tr><td>70</td><td>Shariff</td><td>1332 Cassins St</td><td>Carlsbad</td><td class="money">$325</td><td class="money">$50</td></tr>
+<tr><td>68</td><td>Cathleen</td><td>7936 Los Pinos Cir</td><td>Lavante</td><td class="money">$67</td><td class="money">—</td></tr>
+<tr><td>69</td><td>Kim Lee</td><td>7989 La Brusca Way</td><td>Lavante</td><td class="money">$71</td><td class="money">—</td></tr>
+<tr><td>67</td><td>Zack Steffish</td><td>6690 Agave Cir</td><td>Carlsbad</td><td class="money">$120</td><td class="money">—</td></tr>
+<tr><td>66</td><td>Kim Lawrence</td><td>1341 Cassins St</td><td>Carlsbad</td><td class="money">$185</td><td class="money">—</td></tr>
+<tr><td>65</td><td>Abdul</td><td>986 Merganser Ln</td><td>Carlsbad</td><td class="money">$280</td><td class="money">—</td></tr>
+<tr><td>63</td><td>Lindsay</td><td>4764 Sunburst Road</td><td>Carlsbad</td><td class="money">$65</td><td class="money">—</td></tr>
+<tr><td>64</td><td>Christine</td><td>1857 High Ridge Ave</td><td>Carlsbad</td><td class="money">$87</td><td class="money">—</td></tr>
+<tr><td>62</td><td>Andrea</td><td>1543 Copper Ct</td><td>San Elijo</td><td class="money">$187</td><td class="money">$150</td></tr>
+<tr><td>60</td><td>Maddy</td><td>7958 Los Pinos Cir</td><td>lavante</td><td class="money">$30</td><td class="money">—</td></tr>
+<tr><td>61</td><td>John</td><td>7950 Los Pinos Cir</td><td>lavante</td><td class="money">$91</td><td class="money">$350</td></tr>
+<tr><td>58</td><td>Paul</td><td>7915 las nueces pl</td><td>lavante</td><td class="money">$111</td><td class="money">—</td></tr>
+<tr><td>59</td><td>greg</td><td>7964 los pinos cir</td><td>lavante</td><td class="money">$111</td><td class="money">—</td></tr>
+<tr><td>56</td><td>Joanne</td><td>6447 Ruby Way</td><td>Carlsbad</td><td class="money">$250</td><td class="money">—</td></tr>
+<tr><td>57</td><td>Aruna</td><td>1561 Turquoise Dr</td><td>Carlsbad</td><td class="money">$109</td><td class="money">—</td></tr>
+<tr><td>54</td><td>Jennifer</td><td>2859 Demler Dr</td><td>Harmony Grove</td><td class="money">$119</td><td class="money">—</td></tr>
+<tr><td>55</td><td>Cindy</td><td>2130 Singingwood Pl</td><td>Harmony Grove</td><td class="money">$104</td><td class="money">—</td></tr>
+<tr><td>53</td><td>Phillip</td><td>22065 Gallop</td><td>Harmony Grove</td><td class="money">$320</td><td class="money">—</td></tr>
+<tr><td>51</td><td>Nick</td><td>2705 Overlook Point Dr</td><td>Harmony Grove</td><td class="money">$201</td><td class="money">—</td></tr>
+<tr><td>52</td><td>Colleen</td><td>2227 Shadyridge</td><td>Harmony Grove</td><td class="money">$67</td><td class="money">—</td></tr>
+<tr><td>49</td><td>Debbie, Scott</td><td>6613 Remsen Ct</td><td>Carlsbad</td><td class="money">$135</td><td class="money">—</td></tr>
+<tr><td>50</td><td>Emily Chun</td><td>7325 Gabbiano Lane</td><td>Carlsbad</td><td class="money">$198</td><td class="money">—</td></tr>
+<tr><td>45</td><td>Dianne</td><td>6625 Remson Ct</td><td>Carlsbad</td><td class="money">$123</td><td class="money">$50</td></tr>
+<tr><td>46</td><td>Frank (Amble Dr)</td><td>21741 Amble Drive</td><td>Harmony Grove</td><td class="money">$346</td><td class="money">$200</td></tr>
+<tr><td>47</td><td>Lu</td><td>21711 Deer Grass Dr</td><td>Harmony Grove</td><td class="money">$133</td><td class="money">—</td></tr>
+<tr><td>48</td><td>Lisa, Steve</td><td>21735 Amble Dr</td><td>Harmony Grove</td><td class="money">$146</td><td class="money">—</td></tr>
+<tr><td>44</td><td>Shelly</td><td>1506 Summit Ave</td><td>Cardiff</td><td class="money">$580</td><td class="money">—</td></tr>
+<tr><td>43</td><td>Jim</td><td>3108 Serrano Dr</td><td>lavante</td><td class="money">$105</td><td class="money">—</td></tr>
+<tr><td>42</td><td>Leonard Miller (Leo)</td><td>6820 Via Verano</td><td>Carlsbad</td><td class="money">$100</td><td class="money">—</td></tr>
+<tr><td>41</td><td>Dave Aurther</td><td>6462 Willow Place</td><td>Carlsbad</td><td class="money">$50</td><td class="money">—</td></tr>
+<tr><td>39</td><td>Curtis Buck</td><td>6486 Willow Pl</td><td>Carlsbad</td><td class="money">$130</td><td class="money">$700</td></tr>
+<tr><td>40</td><td>Priye</td><td>2314 Via Villegas</td><td>Carlsbad</td><td class="money">$130</td><td class="money">—</td></tr>
+<tr><td>37</td><td>Stephanie Vincent</td><td>750 Glen Arbor Drive</td><td>Encinitas</td><td class="money">$43</td><td class="money">—</td></tr>
+<tr><td>38</td><td>George</td><td>11065 Camino Abrojo</td><td>Rancho Bernardo</td><td class="money">$20</td><td class="money">—</td></tr>
+<tr><td>35</td><td>Minel</td><td>15890 Anjou Lane</td><td>Rancho Bernardo</td><td class="money">$108</td><td class="money">—</td></tr>
+<tr><td>36</td><td>Wes</td><td>15266 Winesprings Ct</td><td>Rancho Bernardo</td><td class="money">$15</td><td class="money">—</td></tr>
+<tr><td>32</td><td>Beth Robert</td><td>15732 Camino Codorniz</td><td>Rancho Bernardo</td><td class="money">$38</td><td class="money">—</td></tr>
+<tr><td>33</td><td>Amy</td><td>10875 Avenida De Los Lobos</td><td>Rancho Bernardo</td><td class="money">$154</td><td class="money">—</td></tr>
+<tr><td>34</td><td>Parvana</td><td>15841 Corte Legarto</td><td>Rancho Bernardo</td><td class="money">$127</td><td class="money">—</td></tr>
+<tr><td>22</td><td>Kelly Fris</td><td>7623 Circulo Sequoia</td><td>Carlsbad</td><td class="money">$210</td><td class="money">$900</td></tr>
+<tr><td>28</td><td>Vanessa</td><td>15131 Dove Creek Rd</td><td>Rancho Bernardo</td><td class="money">$63</td><td class="money">—</td></tr>
+<tr><td>29</td><td>Deepmala</td><td>16232 Palomino Mesa Ct</td><td>Rancho Bernardo</td><td class="money">$158</td><td class="money">—</td></tr>
+<tr><td>30</td><td>Santosh</td><td>16027 Palomino Mesa Ct</td><td>Rancho Bernardo</td><td class="money">$175</td><td class="money">$150</td></tr>
+<tr><td>31</td><td>Zang Wendy</td><td>15154 Dove Creek Road</td><td>Rancho Bernardo</td><td class="money">$93</td><td class="money">—</td></tr>
+<tr><td>25</td><td>Niel</td><td>15132 Palomino Valley Pl</td><td>Rancho Bernardo</td><td class="money">$75</td><td class="money">—</td></tr>
+<tr><td>26</td><td>Annett</td><td>16208 Palomino Mesa Ct</td><td>Rancho Bernardo</td><td class="money">$70</td><td class="money">—</td></tr>
+<tr><td>27</td><td>Mitch</td><td>11012 Avenida De Los Lobos</td><td>Rancho Bernardo</td><td class="money">$75</td><td class="money">—</td></tr>
+<tr><td>24</td><td>Matt</td><td>186 Raintree</td><td>Encinitas</td><td class="money">$375</td><td class="money">—</td></tr>
+<tr><td>23</td><td>Keith</td><td>165 Raintree</td><td>Encinitas</td><td class="money">$190</td><td class="money">$75</td></tr>
+<tr><td>21</td><td>Dennis</td><td>7461 Neptune</td><td>Carlsbad</td><td class="money">$60</td><td class="money">$130</td></tr>
+<tr><td>18</td><td>Jim Hackett</td><td>7473 Neptune Dr</td><td>Carlsbad</td><td class="money">$155</td><td class="money">—</td></tr>
+<tr><td>19</td><td>Elizabeth</td><td>7475 Neptune</td><td>Carlsbad</td><td class="money">$155</td><td class="money">—</td></tr>
+<tr><td>20</td><td>Frank (Neptune Dr)</td><td>7523 Neptune</td><td>Carlsbad</td><td class="money">$230</td><td class="money">—</td></tr>
+<tr><td>14</td><td>Phill</td><td>1337 Skyros Way</td><td>Encinitas</td><td class="money">$515</td><td class="money">—</td></tr>
+<tr><td>15</td><td>Allen</td><td>205 Coral Cove</td><td>Old Hood</td><td class="money">$245</td><td class="money">—</td></tr>
+<tr><td>16</td><td>Tom</td><td>7579 Navigator Circle</td><td>Carlsbad</td><td class="money">$165</td><td class="money">—</td></tr>
+<tr><td>17</td><td>Patti</td><td>7536 Navigator Circle</td><td>Carlsbad</td><td class="money">$199</td><td class="money">—</td></tr>
+<tr><td>13</td><td>Bill</td><td>208 Pacific View</td><td>Encinitas</td><td class="money">$200</td><td class="money">—</td></tr>
+<tr><td>11</td><td>Matt (Asian)</td><td>1582 Wakefeild Lane</td><td>4S Ranch</td><td class="money">$265</td><td class="money">—</td></tr>
+<tr><td>12</td><td>Mike</td><td>1886 Angeline Pl</td><td>4S Ranch</td><td class="money">$340</td><td class="money">—</td></tr>
+<tr><td>10</td><td>Stacy</td><td>3068 Rancho La Presa</td><td>Encinitas</td><td class="money">$240</td><td class="money">—</td></tr>
+<tr><td>8</td><td>Chirs Montgumey</td><td>551 Nobel Ct</td><td>Encinitas</td><td class="money">$270</td><td class="money">—</td></tr>
+<tr><td>9</td><td>Roger Matkin</td><td>574 Nobel Ct.</td><td>Encinitas</td><td class="money">$390</td><td class="money">—</td></tr>
+<tr><td>6</td><td>Matt Glazner</td><td>16495 Nicole Ridge</td><td>4S Ranch</td><td class="money">$270</td><td class="money">—</td></tr>
+<tr><td>7</td><td>Francesco</td><td>15872 Wakefeild Lane</td><td>4S Ranch</td><td class="money">$255</td><td class="money">—</td></tr>
+<tr><td>4</td><td>Sean</td><td>248 Violet Ave</td><td>San Marcos</td><td class="money">$150</td><td class="money">—</td></tr>
+<tr><td>5</td><td>Krissy (Chelsea Ngbr)</td><td>Next to Chelsea</td><td>Carlsbad</td><td class="money">$200</td><td class="money">—</td></tr>
+<tr><td>3</td><td>Wendy Basset</td><td>3072 Rancho La Presa</td><td>Carlsbad</td><td class="money">$280</td><td class="money">—</td></tr>
+<tr><td>1</td><td>Chelsea Koehen</td><td>Chelseas House</td><td>Carlsbad</td><td class="money">$310</td><td class="money">—</td></tr>
+<tr><td>2</td><td>Kritein Seifert</td><td>Kristin House</td><td>Carlsbad</td><td class="money">$385</td><td class="money">—</td></tr></tbody>
+  </table>
+  </div>
+</section>
+<footer>
+  SoCal Shine By Shepard Reichlyn · Static build for crawlers &amp; Claude ·
+  Live SPA: <a href="https://lilboreal.github.io/socal-shine-crm-live/">https://lilboreal.github.io/socal-shine-crm-live/</a>
+</footer>
+</div>
+</body>
+</html>
